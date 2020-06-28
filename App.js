@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -7,24 +8,20 @@
  */
 import 'react-native-gesture-handler';
 import React from 'react';
-import {SafeAreaView, StyleSheet, ScrollView, StatusBar} from 'react-native';
-import TimeFirst from './components/TimeFirst';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {StatusBar} from 'react-native';
 import TimeLogin from './components/TimeLogin';
+import TimeFirst from './components/TimeFirst';
+
+console.disableYellowBox = true;
 
 const App = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <TimeLogin />
+      <StatusBar translucent backgroundColor="#3472df" />
+      {/* <TimeLogin /> */}
+      <TimeFirst />
     </>
   );
 };
-
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-});
 
 export default App;

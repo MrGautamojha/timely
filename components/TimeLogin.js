@@ -233,7 +233,8 @@ export default function TimeLogin() {
             </View>
           </View>
 
-          <View style={{flex: 1, alignItems: 'center'}}>
+          <View
+            style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
             <TouchableOpacity onPress={alert}>
               <Image
                 source={require('../images/glogoo.png')}
