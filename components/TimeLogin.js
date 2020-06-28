@@ -113,6 +113,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     fontSize: 12,
     color: '#000',
+    marginTop: 7,
   },
 });
 
@@ -233,15 +234,16 @@ export default function TimeLogin() {
           </View>
 
           <View style={{flex: 1, alignItems: 'center'}}>
-            <Image
-              source={require('../images/glogoo.png')}
-              style={{
-                height: 50,
-                width: 300,
-                marginTop: 50,
-                // marginBottom:20,
-              }}
-            />
+            <TouchableOpacity onPress={alert}>
+              <Image
+                source={require('../images/glogoo.png')}
+                style={{
+                  height: 50,
+                  width: 300,
+                  marginTop: 50,
+                }}
+              />
+            </TouchableOpacity>
           </View>
         </ImageBackground>
       </View>
